@@ -3,21 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.abpira</groupId>
+        <artifactId>spring-framework</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>com.abpira</groupId>
-    <artifactId>spring-framework</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>example01</module>
-        <module>example02</module>
-        <module>example03</module>
-        <module>example04</module>
-        <module>example05</module>
-        <module>example06</module>
-        <module>example07</module>
-        <module>example08</module>
-    </modules>
+    <artifactId>example07</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -28,9 +20,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>6.0.10</version>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>2.1.1</version>
         </dependency>
 
     </dependencies>
