@@ -1,28 +1,19 @@
 package com.example.beans;
 
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value="personBean")
+@Lazy
 public class Person {
 
-    private String name;
-
-    public Vehicle getVehicle() {
-        return vehicle;
-    }
-
-    @PostConstruct
-    public void initialize() {
-        this.name = "Lucy";
-    }
-
-    private Vehicle vehicle;
+    private String name="Lucy";
+    private final Vehicle vehicle;
 
     @Autowired
-    public Person(Vehicle vehicle) {
-        System.out.println("Person Created");
+    public Person(Vehicle vehicle){
+        System.out.println("Person bean created by Spring");
         this.vehicle = vehicle;
     }
 
@@ -33,4 +24,9 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
 }
