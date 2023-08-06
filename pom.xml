@@ -25,6 +25,8 @@
         <module>example14</module>
         <module>example15</module>
         <module>example16</module>
+        <module>example17</module>
+        <module>example18</module>
     </modules>
 
     <properties>
@@ -34,6 +36,24 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>6.0.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>6.0.10</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
